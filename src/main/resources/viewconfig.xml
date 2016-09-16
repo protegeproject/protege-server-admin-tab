@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+    <VSNode splits="0.25 0.75">
+        <HSNode splits="0.6 0.4">
+            <CNode>
+                <Component label="Users">
+                    <Property id="pluginId" value="protege-server-admin-tab.UserView"/>
+                </Component>
+            </CNode>
+            <CNode>
+                <Component label="Projects">
+                    <Property id="pluginId" value="protege-server-admin-tab.ProjectView"/>
+                </Component>
+                <Component label="Roles">
+                    <Property id="pluginId" value="protege-server-admin-tab.RoleView"/>
+                </Component>
+                <Component label="Operations">
+                    <Property id="pluginId" value="protege-server-admin-tab.OperationView"/>
+                </Component>
+            </CNode>
+        </HSNode>
+        <HSNode splits="0.6 0.4">
+            <CNode>
+                <Component label="Access Control Policy">
+                    <Property id="pluginId" value="protege-server-admin-tab.PolicyView"/>
+                </Component>
+                <Component label="Server Settings">
+                    <Property id="pluginId" value="protege-server-admin-tab.ServerSettingsView"/>
+                </Component>
+                <Component label="JSON Serialization">
+                    <Property id="pluginId" value="protege-server-admin-tab.JsonSerializationView"/>
+                </Component>
+            </CNode>
+            <CNode>
+                <Component label="Policy Object Details">
+                    <Property id="pluginId" value="protege-server-admin-tab.DetailsView"/>
+                </Component>
+            </CNode>
+        </HSNode>
+    </VSNode>
+</layout>
