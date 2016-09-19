@@ -1,7 +1,7 @@
 package edu.stanford.protege.admin.ui;
 
 import edu.stanford.protege.metaproject.api.User;
-import org.protege.editor.owl.client.diff.ui.GuiUtils;
+import org.protege.editor.owl.client.ui.GuiUtils;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;

@@ -7,7 +7,7 @@ import org.protege.editor.core.ui.util.InputVerificationStatusChangedListener;
 import org.protege.editor.core.ui.util.JOptionPaneEx;
 import org.protege.editor.core.ui.util.VerifiedInputEditor;
 import org.protege.editor.owl.OWLEditorKit;
-import org.protege.editor.owl.client.diff.ui.GuiUtils;
+import org.protege.editor.owl.client.ui.GuiUtils;
 import org.protege.editor.owl.ui.UIHelper;
 
 import javax.swing.*;

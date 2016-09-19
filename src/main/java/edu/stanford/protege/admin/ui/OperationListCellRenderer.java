@@ -2,7 +2,7 @@ package edu.stanford.protege.admin.ui;
 
 import edu.stanford.protege.metaproject.api.Operation;
 import edu.stanford.protege.metaproject.api.OperationType;
-import org.protege.editor.owl.client.diff.ui.GuiUtils;
+import org.protege.editor.owl.client.ui.GuiUtils;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,6 +12,7 @@ import java.awt.*;
  * Stanford Center for Biomedical Informatics Research
  */
 public class OperationListCellRenderer extends DefaultListCellRenderer {
+    private static final long serialVersionUID = 2551597812200326500L;
 
     @Override
     public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
