@@ -74,9 +74,10 @@ public class ProjectOptionDialogPanel extends JPanel implements VerifiedInputEdi
         rowIndex++;
 
         JPanel buttonsPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 0, 0));
-        addValueBtn = new JButton(GuiUtils.getIcon("plus.png", 14, 14));
-        removeValueBtn = new JButton(GuiUtils.getIcon("minus.png", 14, 14));
-        editValueBtn = new JButton(GuiUtils.getIcon("edit.png", 16, 16));
+        ClassLoader classLoader = ProjectOptionDialogPanel.class.getClassLoader();
+        addValueBtn = new JButton(GuiUtils.getIcon(classLoader, "plus.png", 14, 14));
+        removeValueBtn = new JButton(GuiUtils.getIcon(classLoader, "minus.png", 14, 14));
+        editValueBtn = new JButton(GuiUtils.getIcon(classLoader, "edit.png", 16, 16));
         enableButton(false, removeValueBtn, editValueBtn);
 
         addValueBtn.setPreferredSize(new Dimension(30, 30));

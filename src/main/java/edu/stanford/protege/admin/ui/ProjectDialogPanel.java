@@ -257,9 +257,10 @@ public class ProjectDialogPanel extends JPanel implements VerifiedInputEditor {
 
         // buttons to add, remove, and edit project options
         JPanel buttonsPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 0, 0));
-        addOptionBtn = new JButton(GuiUtils.getIcon("plus.png", 14, 14));
-        removeOptionBtn = new JButton(GuiUtils.getIcon("minus.png", 14, 14));
-        editOptionBtn = new JButton(GuiUtils.getIcon("edit.png", 16, 16));
+        ClassLoader classLoader = ProjectDialogPanel.class.getClassLoader();
+        addOptionBtn = new JButton(GuiUtils.getIcon(classLoader, "plus.png", 14, 14));
+        removeOptionBtn = new JButton(GuiUtils.getIcon(classLoader, "minus.png", 14, 14));
+        editOptionBtn = new JButton(GuiUtils.getIcon(classLoader, "edit.png", 16, 16));
 
         enableButton(false, removeOptionBtn, editOptionBtn);
         addOptionBtn.setPreferredSize(new Dimension(30, 30));
