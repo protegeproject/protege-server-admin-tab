@@ -1,13 +1,12 @@
 package edu.stanford.protege.admin.ui;
 
+import edu.stanford.protege.admin.exception.PolicyEntryAlreadyExistsException;
 import edu.stanford.protege.metaproject.api.*;
-import edu.stanford.protege.metaproject.impl.ConfigurationUtils;
 import org.protege.editor.core.ui.error.ErrorLogPanel;
 import org.protege.editor.core.ui.util.InputVerificationStatusChangedListener;
 import org.protege.editor.core.ui.util.VerifiedInputEditor;
 import org.protege.editor.owl.OWLEditorKit;
 import org.protege.editor.owl.client.ClientSession;
-import edu.stanford.protege.admin.exception.PolicyEntryAlreadyExistsException;
 import org.protege.editor.owl.client.api.Client;
 import org.protege.editor.owl.client.api.exception.AuthorizationException;
 import org.protege.editor.owl.client.api.exception.ClientRequestException;
@@ -145,7 +144,6 @@ public class PolicyAssignmentDialogPanel extends JPanel implements VerifiedInput
         List<Project> projects = new ArrayList<>();
         try {
             projects = client.getAllProjects();
-            projects.add(ConfigurationUtils.getUniversalProject());
         } catch (AuthorizationException | ClientRequestException e) {
             ErrorLogPanel.showErrorDialog(e);
         }
