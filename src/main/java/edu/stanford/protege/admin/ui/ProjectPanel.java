@@ -5,6 +5,7 @@ import edu.stanford.protege.metaproject.ConfigurationManager;
 import edu.stanford.protege.metaproject.api.PolicyFactory;
 import edu.stanford.protege.metaproject.api.Project;
 import edu.stanford.protege.metaproject.api.UserId;
+import edu.stanford.protege.metaproject.impl.ConfigurationUtils;
 import edu.stanford.protege.metaproject.impl.Operations;
 import org.protege.editor.core.Disposable;
 import org.protege.editor.core.ui.error.ErrorLogPanel;
@@ -165,6 +166,7 @@ public class ProjectPanel extends JPanel implements Disposable {
         try {
             if(client != null) {
                 List<Project> projects = client.getAllProjects();
+                projects.remove(ConfigurationUtils.getUniversalProject());
                 Collections.sort(projects);
                 data.addAll(projects.stream().map(ProjectListItem::new).collect(Collectors.toList()));
             }
