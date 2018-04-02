@@ -17,7 +17,7 @@
 	<extension id="UserView"
 			   point="org.protege.editor.core.application.ViewComponent">
 		<label value="Users"/>
-		<class value="edu.stanford.protege.admin.ui.UserView"/>
+		<class value="edu.stanford.protege.server.admin.ui.UserView"/>
 		<headerColor value="@org.protege.ontologycolor"/>
 		<category value="Client-Server"/>
 	</extension>
@@ -25,7 +25,7 @@
 	<extension id="RoleView"
 			   point="org.protege.editor.core.application.ViewComponent">
 		<label value="Roles"/>
-		<class value="edu.stanford.protege.admin.ui.RoleView"/>
+		<class value="edu.stanford.protege.server.admin.ui.RoleView"/>
 		<headerColor value="@org.protege.ontologycolor"/>
 		<category value="Client-Server"/>
 	</extension>
@@ -33,7 +33,7 @@
 	<extension id="OperationView"
 			   point="org.protege.editor.core.application.ViewComponent">
 		<label value="Operations"/>
-		<class value="edu.stanford.protege.admin.ui.OperationView"/>
+		<class value="edu.stanford.protege.server.admin.ui.OperationView"/>
 		<headerColor value="@org.protege.ontologycolor"/>
 		<category value="Client-Server"/>
 	</extension>
@@ -41,7 +41,7 @@
 	<extension id="ProjectView"
 			   point="org.protege.editor.core.application.ViewComponent">
 		<label value="Projects"/>
-		<class value="edu.stanford.protege.admin.ui.ProjectView"/>
+		<class value="edu.stanford.protege.server.admin.ui.ProjectView"/>
 		<headerColor value="@org.protege.ontologycolor"/>
 		<category value="Client-Server"/>
 	</extension>
@@ -49,7 +49,7 @@
 	<extension id="DetailsView"
 			   point="org.protege.editor.core.application.ViewComponent">
 		<label value="Policy Object Details"/>
-		<class value="edu.stanford.protege.admin.ui.DetailsView"/>
+		<class value="edu.stanford.protege.server.admin.ui.DetailsView"/>
 		<headerColor value="@org.protege.ontologycolor"/>
 		<category value="Client-Server"/>
 	</extension>
@@ -57,7 +57,7 @@
 	<extension id="JsonSerializationView"
 			   point="org.protege.editor.core.application.ViewComponent">
 		<label value="JSON Serialization"/>
-		<class value="edu.stanford.protege.admin.ui.JsonSerializationView"/>
+		<class value="edu.stanford.protege.server.admin.ui.JsonSerializationView"/>
 		<headerColor value="@org.protege.ontologycolor"/>
 		<category value="Client-Server"/>
 	</extension>
@@ -65,7 +65,7 @@
 	<extension id="PolicyView"
 			   point="org.protege.editor.core.application.ViewComponent">
 		<label value="Access Control Policy"/>
-		<class value="edu.stanford.protege.admin.ui.PolicyView"/>
+		<class value="edu.stanford.protege.server.admin.ui.PolicyView"/>
 		<headerColor value="@org.protege.ontologycolor"/>
 		<category value="Client-Server"/>
 	</extension>
@@ -73,7 +73,7 @@
 	<extension id="ServerSettingsView"
 			   point="org.protege.editor.core.application.ViewComponent">
 		<label value="Server settings"/>
-		<class value="edu.stanford.protege.admin.ui.ServerSettingsView"/>
+		<class value="edu.stanford.protege.server.admin.ui.ServerSettingsView"/>
 		<headerColor value="@org.protege.ontologycolor"/>
 		<category value="Client-Server"/>
 	</extension>
